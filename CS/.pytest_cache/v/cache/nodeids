@@ -1,0 +1,4 @@
+[
+  "test_campaign_page.py::TestProductPage::test_campaign_cards_auto_complete",
+  "test_campaign_page.py::TestProductPage::test_loading_statistics_for_campaign"
+]

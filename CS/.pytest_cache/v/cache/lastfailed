@@ -1,0 +1,7 @@
+{
+  "example.py": true,
+  "test campaign_page.py": true,
+  "test_campaign_page.py::TestProductPage::test_cabinet_mediaplan_for_data_saving": true,
+  "test_campaign_page.py::test_campaign_cards_auto_complete": true,
+  "test_main_page.py::TestUserLogin::test_campaign_cards_auto_complete": true
+}
