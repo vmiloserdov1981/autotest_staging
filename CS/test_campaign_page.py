@@ -27,7 +27,7 @@ class TestProductPage:
         # Данные
         page = CampaignPage(browser)
         reckitt_benckiser = "Reckitt Benckiser"
-        string_filepath = "D:\Autotest\campaign_cards_auto_complete\Test_reckitt benckiser_4.xlsx"
+        string_filepath = "C:\Autotest\campaign_cards_auto_complete\Test_reckitt benckiser_4.xlsx"
         campaing_name = "Auto1301_10"
 #        campaing_name = "Ayterwrr"
         # Подготовка
@@ -56,7 +56,7 @@ class TestProductPage:
         # Подготовка
         page = CampaignPage(browser)
         Unilever = "Unilever"
-        string_filepath_loading_statistics = "D:\Autotest\loading_statistics\Autotest_statistics_loading.xlsx"
+        string_filepath_loading_statistics = "C:\Autotest\loading_statistics\Autotest_statistics_loading.xlsx"
         file_uploaded_successfully = "Загружено"
         page.open()
         time.sleep(3)

@@ -9,21 +9,21 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from .locators import BasePageLocators
 from selenium.webdriver.common.keys import Keys
-
+from .locators import CampaignPageLocators
 
 class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.page_url = ""
         self.browser = browser
         self.url = url
-        self.browser.implicitly_wait(
-            timeout)  # В конструктор BasePage добавим команду для неявного ожидания со значением по умолчанию в 10
+        self.browser.implicitly_wait(4)
+#        self.browser.implicitly_wait(timeout)  # В конструктор BasePage добавим команду для неявного ожидания со значением по умолчанию в 10
 
     site_url = "https://clientspace-staging.advcloud.ru"
     campaign_url = "https://clientspace-staging.advcloud.ru/campaigns"
     accounts_page = "https://clientspace-staging.advcloud.ru/accounts"
     statistics_page = "https://clientspace-staging.advcloud.ru/upload-statistics"
-
+    custom_campaign_url = "https://clientspace-staging.advcloud.ru/campaigns"
 
     def choice_advertiser_reckitt_benckiser(self, reckitt_benckiser):
         link = self.browser.find_element(*BasePageLocators.CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN).click().send_keys(reckitt_benckiser).sendKeys(Keys.ENTER)
@@ -163,6 +163,12 @@ class BasePage():
     def should_be_authorized_user(self):
         assert self.is_element_present(*BasePageLocators.USER_ICON_CS), "User icon is not presented," \
                                                                      " probably unauthorised user"
+    def checking_client_cannot_create_campaign(self):
+        assert not self.is_element_present(*CampaignPageLocators.ADD_NEW_CAMPAIGN_BTN), "Ошибка роли КЛИЕНТ - есть кнопка создать кампанию"
+
+    def checking_user_cannot_delete_campaign(self):
+        assert not self.is_element_present(*CampaignPageLocators.DELETE_TEST_CAMPAIGN_BTN), "Ошибка роли USER - доступно удаление кампании"
+
 
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"

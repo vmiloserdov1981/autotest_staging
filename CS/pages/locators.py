@@ -6,7 +6,7 @@ class BasePageLocators():
     GO_TO_CAMPAIGN_PAGE_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(2)")
     GO_TO_ACCOUNTS_PAGE_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(3)")
     GO_TO_STATISTICS_PAGE_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(4)")
-    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_AdvertiserContainer_1lE9tNxbfGG-eKaFRDnRJY > div > div > div.css-1wy0on6.react-select__indicators > div > i")
+    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Info_3EBdMuO8EI_2y0_ty-1b35 > div > div > div.css-1wy0on6.react-select__indicators > div > i")
     CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN2 = (By.CSS_SELECTOR, "#react-select-3-input")
 
     CHOICE_ADVERTISER_UNILEVER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_AdvertiserContainer_1lE9tNxbfGG-eKaFRDnRJY > div > div > div.css-z8ex4e.react-select__value-container.react-select__value-container--has-value")
@@ -44,6 +44,8 @@ class CampaignPageLocators():
     CLICK_PAGE_DOWNLOAD_STATISTICS = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(4)")
     SELECT_FILE_STATISTICS_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > section.UploadStatistics-module_Uploader_1wfmbWplR8QouBwuMME9gk > div > input")
     CHECK_STATISTICS_LOADING_STATUS = (By.CSS_SELECTOR, "#main_content > div > main > div > section.UploadStatistics-module_Files_2YC68B0iGQpNXqcC__WwJ7 > div.UploadStatistics-module_FilesColumn_1Z3phKPePMV6EezT7LaHq- > table > tbody > tr:nth-child(1) > td:nth-child(5) > div > i")
+    CAMPAIGN_PAGE_CLICK = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(2)")
+
 
 
 #class MainPageLocators():

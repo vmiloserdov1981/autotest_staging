@@ -1,6 +1,7 @@
 from .base_page import BasePage
 from .locators import LoginPageLocators
-
+from .locators import CampaignPageLocators
+from .locators import BasePageLocators
 
 class LoginPage(BasePage):
     def __init__(self, browser):
@@ -11,6 +12,9 @@ class LoginPage(BasePage):
         self.browser.find_element(*LoginPageLocators.USER_EMAIL).send_keys(name)
         self.browser.find_element(*LoginPageLocators.USER_PASS).send_keys(password)
         self.browser.find_element(*LoginPageLocators.LOGIN_BTN).click()
+
+    def go_to_сampaigns_page(self):
+        self.browser.find_element(*BasePageLocators.GO_TO_CAMPAIGN_PAGE_BTN).click()
 
 
 
