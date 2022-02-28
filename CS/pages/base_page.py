@@ -10,6 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from .locators import BasePageLocators
 from selenium.webdriver.common.keys import Keys
 from .locators import CampaignPageLocators
+from .locators import ProgrammaticPageLocators
 
 class BasePage():
     def __init__(self, browser, url, timeout=10):
@@ -168,6 +169,14 @@ class BasePage():
 
     def checking_user_cannot_delete_campaign(self):
         assert not self.is_element_present(*CampaignPageLocators.DELETE_TEST_CAMPAIGN_BTN), "Ошибка роли USER - доступно удаление кампании"
+
+    def checking_admin_can_delete_campaign(self):
+        assert self.is_element_present(*CampaignPageLocators.DELETE_TEST_CAMPAIGN_BTN), "Ошибка роли ADMIN - нет кнопки удаления кампании"
+
+    def checking_available_statistics_buttons(self):
+        assert self.is_element_present(*ProgrammaticPageLocators.STATISTIC_BTN), "Ошибка роли ProgrammaticManager! Нет кнопки СТАТИСТИКА"
+
+
 
 
     def should_be_login_link(self):

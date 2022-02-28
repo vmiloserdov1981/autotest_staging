@@ -47,6 +47,9 @@ class CampaignPageLocators():
     CAMPAIGN_PAGE_CLICK = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(2)")
 
 
+class ProgrammaticPageLocators():
+    CLICK_LOG_BTN = (By.CSS_SELECTOR, "#pr_id_4_content > div > div > div.ControlPanel-module_actions_2S_gDbRYR3TYbGNPaNa0Pk > div > button:nth-child(3) > span.p-button-label.p-c")
+    STATISTIC_BTN = (By.CSS_SELECTOR, "#pr_id_8_header_0 > span")
 
 #class MainPageLocators():
 #    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
