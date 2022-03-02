@@ -30,6 +30,7 @@ class TestProductPage:
         string_filepath = "C:\Autotest\campaign_cards_auto_complete\Test_reckitt benckiser_4.xlsx"
         campaing_name = "Auto1301_10"
 #        campaing_name = "Ayterwrr"
+
         # Подготовка
         page.open()
         time.sleep(3)

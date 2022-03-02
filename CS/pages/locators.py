@@ -6,8 +6,8 @@ class BasePageLocators():
     GO_TO_CAMPAIGN_PAGE_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(2)")
     GO_TO_ACCOUNTS_PAGE_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(3)")
     GO_TO_STATISTICS_PAGE_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(4)")
-    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Info_3EBdMuO8EI_2y0_ty-1b35 > div > div > div.css-1wy0on6.react-select__indicators > div > i")
-    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN2 = (By.CSS_SELECTOR, "#react-select-3-input")
+    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_InfoWrapper_kbZsX3uIymxZbCP1rPss6 > div > div > div > div.css-1wy0on6.react-select__indicators > div > i")
+    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN2 = (By.CSS_SELECTOR, "#react-select-2-input")
 
     CHOICE_ADVERTISER_UNILEVER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_AdvertiserContainer_1lE9tNxbfGG-eKaFRDnRJY > div > div > div.css-z8ex4e.react-select__value-container.react-select__value-container--has-value")
     CHOICE_ADVERTISER_UNILEVER_BTN2 = (By.CSS_SELECTOR, "#react-select-2-input")
@@ -29,7 +29,7 @@ class BasePageLocators():
 class CampaignPageLocators():
     ADD_NEW_CAMPAIGN_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > div.Campaigns-module_Header_1ln_h2Yh14IhTRID2x0apT > a > button")
     FILL_IN_THE_CAMPAIGN_AUTOMATICALLY_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > section > form > div:nth-child(3) > button")
-    SELECT_FILE_BTN = (By.CSS_SELECTOR, "body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-content > div > div.FileUploader-module_Uploader_3eTPuounFa-4nCfdlQb1Hl > input")
+    SELECT_FILE_BTN = (By.CSS_SELECTOR, "body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-content > div > div.FileUploader-module_root_2bpDXtrBY2UEV341pfIZq7 > input")
     SHEET_CONTAINING_CAMPAIGN_CARD_BTN0 = (By.CSS_SELECTOR, "body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-content > div > div.css-2b097c-container > div")
     SHEET_CONTAINING_CAMPAIGN_CARD_BTN = (By.CSS_SELECTOR, "#react-select-10-input")
     AUTO_CARD_CREATE_SAVE_BUTTON = (By.CSS_SELECTOR, "body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-footer > div:nth-child(2) > button")
@@ -60,10 +60,14 @@ class LoginPageLocators():
     USER_PASS = (By.CSS_SELECTOR, "#password")
     LOGIN_BTN = (By.CSS_SELECTOR, ".Auth-module_FormButton_33oas1VJ77STNXmaFXNJMN")
 
-
-
-
-
+class AdministrationLocators():
+    ADVERTISER_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > aside > ul > li:nth-child(1) > a")
+    SELECT_LOGO_FILE_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > div > div > div.LogoPreview-module_Content_35qcUQhdXsnqCPfP3CpvYl > div > button.Button-module_Button_2YI99q3RebaqtAPp3sbzy.Button-module_ButtonLight_mYLvDV-8FNPH0QQ63FVHE > input")
+    SAVE_LOGO_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > header > div > button:nth-child(2)")
+    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_InfoWrapper_kbZsX3uIymxZbCP1rPss6 > div > div > div > div.css-1wy0on6.react-select__indicators > div > i")
+    CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN2 = (By.CSS_SELECTOR, "#react-select-2-input")
+    LOGO_JPG  = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > div > div > div.LogoPreview-module_Preview_2O19TY6f4lnk-sLouewFYR > div > img")
+    DEL_ADVERTISER_LOGO = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > div > div > div.LogoPreview-module_Content_35qcUQhdXsnqCPfP3CpvYl > div > button.Button-module_Button_2YI99q3RebaqtAPp3sbzy.Button-module_ButtonTransparentDanger_-wlxR7sCENptatLtp5Knx")
 
 
 
