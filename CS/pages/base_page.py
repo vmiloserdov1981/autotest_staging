@@ -66,6 +66,11 @@ class BasePage():
         link = self.browser.find_element(*BasePageLocators.GO_TO_ADVERTISER_LINKS_POWER_BI)
         link.click()
         time.sleep(1)
+
+    def go_to_advertiser_links_power_bi_scroll(self):
+        link = self.browser.find_element(*BasePageLocators.GO_TO_ADVERTISER_LINKS_POWER_BI)
+        link.click()
+        time.sleep(1)
         link = self.browser.find_element(*BasePageLocators.BASE_PAGE_CLICK)
         link.click()
         time.sleep(2)
@@ -108,7 +113,16 @@ class BasePage():
         link4 = self.browser.find_element(*BasePageLocators.SAVE_CUSTOM_BTN)
         link4.click()
 
-
+    def create_title_and_link_for_custom_button(self, custom_btn_name, custom_btn_url):
+        link = self.browser.find_element(*BasePageLocators.CHOICE_CUSTOM_NAME_BTN)
+        link.send_keys(custom_btn_name)
+        link2 = self.browser.find_element(*BasePageLocators.CHOICE_CUSTOM_URL_BTN)
+        link2.send_keys(custom_btn_url)
+        time.sleep(1)
+        link3 = self.browser.find_element(*BasePageLocators.CHOICE_CUSTOM_BTN_CHECKBOX)
+        link3.click()
+        link4 = self.browser.find_element(*BasePageLocators.SAVE_CUSTOM_BTN)
+        link4.click()
 
     def check_url_campaign_page(self):
         self.should_be_campaign_page()

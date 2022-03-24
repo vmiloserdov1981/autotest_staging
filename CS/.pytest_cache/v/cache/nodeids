@@ -1,4 +1,16 @@
 [
+  "test_authorization.py::TestAuthorizationPage::test_authorization",
+  "test_authorization.py::TestAuthorizationPage::test_authorization_admin",
+  "test_authorization.py::TestAuthorizationPage::test_authorization_client",
+  "test_authorization.py::TestAuthorizationPage::test_authorization_incorrect_password",
+  "test_authorization.py::TestAuthorizationPage::test_authorization_user",
+  "test_authorization.py::TestAuthorizationPage::test_checking_admin_role",
+  "test_authorization.py::TestAuthorizationPage::test_checking_client_role",
+  "test_authorization.py::TestAuthorizationPage::test_checking_user_role",
   "test_campaign_page.py::TestProductPage::test_campaign_cards_auto_complete",
-  "test_campaign_page.py::TestProductPage::test_loading_statistics_for_campaign"
+  "test_campaign_page.py::TestProductPage::test_loading_statistics_for_campaign",
+  "test_main_page.py::TestUserLogin::test_creating_custom_advertiser_buttons_on_brand_page",
+  "test_main_page.py::TestUserLogin::test_user_stays_on_accounts_page_after_reload",
+  "test_main_page.py::TestUserLogin::test_user_stays_on_campaign_page_after_reload",
+  "test_main_page.py::TestUserLogin::test_user_stays_on_statistics_page_after_reload"
 ]

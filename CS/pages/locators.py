@@ -14,7 +14,7 @@ class BasePageLocators():
 
     GO_TO_ADMINISTRATION_PAGE_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_User_2Rj6kcRxQQedhnZXdlrqWG > div > img")
     GO_TO_ADMINISTRATION_PAGE_BTN2 = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_User_2Rj6kcRxQQedhnZXdlrqWG > ul > li:nth-child(1) > a")
-    GO_TO_ADVERTISER_LINKS_POWER_BI = (By.CSS_SELECTOR, "#main_content > div > main > div > aside > ul > li:nth-child(5) > a")
+    GO_TO_ADVERTISER_LINKS_POWER_BI = (By.CSS_SELECTOR, "#main_content > div > main > div > aside > ul > li:nth-child(6) > a")
     SCROLL_DOWN_TO_ADD_BUTTON = (By.CSS_SELECTOR, "#react-tabs-5 > div > div:nth-child(3) > div > button")
     BASE_PAGE_CLICK = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div.PowerbiAdvertiserSettings-module_Layout_kBaiBZM1T2VMqK96VopLU > div > div.PowerbiAdvertiserSettings-module_Form_146jI4j5_rDd_MQ_Pl4Std > h2")
     CHOICE_CUSTOM_NAME_BTN = (By.CSS_SELECTOR, "#react-tabs-1 > div > div:nth-child(3) > div > table > tbody > tr:nth-child(4) > td:nth-child(1) > input")
@@ -62,13 +62,23 @@ class LoginPageLocators():
 
 class AdministrationLocators():
     ADVERTISER_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > aside > ul > li:nth-child(1) > a")
+    BRAND_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > aside > ul > li:nth-child(2) > a")
     SELECT_LOGO_FILE_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > div > div > div.LogoPreview-module_Content_35qcUQhdXsnqCPfP3CpvYl > div > button.Button-module_Button_2YI99q3RebaqtAPp3sbzy.Button-module_ButtonLight_mYLvDV-8FNPH0QQ63FVHE > input")
     SAVE_LOGO_BTN = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > header > div > button:nth-child(2)")
+    SELECT_LOGO_FILE_BTN2 = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div.Brands-module_Brands_1IbvqyGqGxcoGzVuwicdwc > div > div.Brands-module_LogoSettings_2v4a3q1Uv2jmJdGmrlVOkH > div.LogoPreview-module_Layout_z3Uw8Jg2KxVAykI9WPebs > div.LogoPreview-module_Content_35qcUQhdXsnqCPfP3CpvYl > div.LogoPreview-module_LogoEditor_S3lxZ8h53eiCNHjssZ1Qz > button.Button-module_Button_2YI99q3RebaqtAPp3sbzy.Button-module_ButtonLight_mYLvDV-8FNPH0QQ63FVHE > input")
+    SAVE_LOGO_BTN2 = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div.Brands-module_Brands_1IbvqyGqGxcoGzVuwicdwc > div > div.Brands-module_LogoSettings_2v4a3q1Uv2jmJdGmrlVOkH > div.Brands-module_SaveButtons_3XiaKHwwWBgWfo65Y6fugi > button:nth-child(2)")
     CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_InfoWrapper_kbZsX3uIymxZbCP1rPss6 > div > div > div > div.css-1wy0on6.react-select__indicators > div > i")
     CHOICE_ADVERTISER_RECKITT_BENCKISER_BTN2 = (By.CSS_SELECTOR, "#react-select-2-input")
     LOGO_JPG  = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > div > div > div.LogoPreview-module_Preview_2O19TY6f4lnk-sLouewFYR > div > img")
+    LOGO_JPG2 = (By.CSS_SELECTOR, "#main_content > div > main > div > div.Brands-module_Main_1aBYIsZgdMswcTPOfcJ_Ig > div.Brands-module_MainContent_1Fu4zlg6C_zOkSlAAP_QmP > div > div:nth-child(1) > div > div > div > a > div > div.BrandCard-module_Content_L2lAz0f2ns0g0bpQSzkDS > header > img")
     DEL_ADVERTISER_LOGO = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div:nth-child(1) > div > div > div.LogoPreview-module_Content_35qcUQhdXsnqCPfP3CpvYl > div > button.Button-module_Button_2YI99q3RebaqtAPp3sbzy.Button-module_ButtonTransparentDanger_-wlxR7sCENptatLtp5Knx")
+    DEL_BRAND_LOGO = (By.CSS_SELECTOR, "#main_content > div > main > div > section > div > div.Brands-module_Brands_1IbvqyGqGxcoGzVuwicdwc > div > div.Brands-module_LogoSettings_2v4a3q1Uv2jmJdGmrlVOkH > div.LogoPreview-module_Layout_z3Uw8Jg2KxVAykI9WPebs > div.LogoPreview-module_Content_35qcUQhdXsnqCPfP3CpvYl > div.LogoPreview-module_LogoEditor_S3lxZ8h53eiCNHjssZ1Qz > button.Button-module_Button_2YI99q3RebaqtAPp3sbzy.Button-module_ButtonTransparentDanger_-wlxR7sCENptatLtp5Knx")
+    GOTO_BRAND_PAGE = (By.CSS_SELECTOR, "#main_content > div > header > div.Header-module_Navbar_oC10rX6SGmKcubtfg-6Fu > a:nth-child(1)")
+    CHOICE_DASHBOARD_URL_BTN = (By.CSS_SELECTOR, "#react-tabs-1 > div > div:nth-child(1) > div:nth-child(1) > div.RowComponent-module_Row_12ZnT0hcdF3003f1vs_7Bu > div.RowComponent-module_Input_1ShcsJnSQipxuHnFN6lsbO > input")
+    CHOICE_DASHBOARD_URL_BTN2 = (By.CSS_SELECTOR, "#react-tabs-1 > div > div:nth-child(1) > div:nth-child(1) > div.RowComponent-module_Row_12ZnT0hcdF3003f1vs_7Bu > div.RowComponent-module_Input_1ShcsJnSQipxuHnFN6lsbO > input")
 
+#    CHOICE_DASHBOARD_URL_BTN = (By.XPATH, '//*[@id="react-tabs-5"]/div/div[1]/div[1]/div[2]/div[2]/input')
+    CHOICE_DASHBOARD_BTN_CHECKBOX = (By.CSS_SELECTOR, "#react-tabs-5 > div > div:nth-child(1) > div:nth-child(1) > div.RowComponent-module_Row_12ZnT0hcdF3003f1vs_7Bu > label > label > div > i")
 
 
 class ProductPageLocators():
